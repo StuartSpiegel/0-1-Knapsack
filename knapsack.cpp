@@ -40,9 +40,9 @@ else return max( val[n-1] + knapSack(W-wt[n-1], wt, val, n-1),
 // Main Driver Code
 int main()
 {
-    int val[] = {60, 100, 120}; //the values of the respective items in the knapsack
-    int wt[] = {10, 20, 30}; //the weights of the items
-    int W = 50; //weight limit of knapSack
+    int val[] = {80, 10, 50}; //the values of the respective items in the knapsack
+    int wt[] = {10, 25, 40}; //the weights of the items
+    int W = 100; //weight limit of knapSack
     int n = sizeof(val)/sizeof(val[0]); //number of items
     cout<<knapSack(W, wt, val, n); //print the output to the console
     return 0; //dummy return
